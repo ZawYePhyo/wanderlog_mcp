@@ -7,6 +7,15 @@
 
 An MCP server that lets Claude (or any MCP-compatible agent) view, build, and manage [Wanderlog](https://wanderlog.com) trip itineraries through conversation.
 
+## Works Well With
+
+For the best experience, pair this MCP server with [Travel Planner Skill](https://github.com/ZawYePhyo/travel-planner-skill).
+
+- `wanderlog_mcp` is the execution layer: it reads and updates trips inside Wanderlog
+- `Travel Planner Skill` is the planning layer: it helps an agent ask better trip questions, research destinations, shape realistic itineraries, and then hand the approved plan off to Wanderlog MCP
+
+If you want an agent to both plan trips intelligently and write them into Wanderlog, these two repos are meant to be used together.
+
 Instead of clicking through the Wanderlog UI to plan a trip, just ask:
 
 > *"Create a 5-day Tokyo itinerary starting May 3 with restaurants, temples, and a hotel in Shinjuku."*
